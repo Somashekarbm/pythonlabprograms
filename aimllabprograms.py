@@ -1,18 +1,32 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[3]:
+#python programs 
 
 
 print('my name is')
 for i in range(5):
     print('Jimmy Five Times('+str(i)+')')
     
+''' 
+Program 1A 
+Test Average
+'''
+m1 = int(input("Enter marks for test1 : "))
+m2 = int(input("Enter marks for test2 : "))
+m3 = int(input("Enter marks for test3 : "))
+if m1 <= m2 and m1 <= m3:
+ avgMarks = (m2+m3)/2
+elif m2 <= m1 and m2 <= m3:
+ avgMarks = (m1+m3)/2
+elif m3 <= m1 and m2 <= m2:
+ avgMarks = (m1+m2)/2
+
+print("Average of best two test marks out of three test’s marks is", avgMarks);
 
 
-# In[4]:
 
-
+#lap program 1(B)
 val=str(input("enter a value:"))
 str_val=str(val)
 if str_val==str_val[::-1]:
@@ -26,7 +40,7 @@ for i in range(10):
 
 # In[1]:
 
-
+#lab program 2(A)
 def fn(n):
     if n==1:
         return 0;
@@ -42,27 +56,7 @@ else:
     print("error in input")
     
 
-
-# In[5]:
-
-
-sentence=input("enter a sentence:")
-wordList=sentence.split(" ")
-print("this sentence has",len(wordList),"words")
-digcnt=upcnt=locnt=0
-for ch in sentence:
-    if '0'<=ch<='9':
-        digcnt+=1
-    elif 'A'<=ch<='Z':
-        upcnt+=1
-    elif 'a'<=ch<='z':
-        locnt+=1
-print("this sentence has:",digcnt,"digits",upcnt,"upper case letters",locnt,"lower case letters")
-
-
-# In[5]:
-
-
+#lab program 2(B)
 def bin2Dec(val):
     rev=val[::-1]
     dec=0
@@ -94,13 +88,11 @@ num1=input("enter a binary number:")
 print(bin2Dec(num1))
 num2=input("enter a octal number:")
 print(oct2hex(num2))
-    
-        
 
 
-# In[ ]:
 
 
+#program 3(A)
 sentence=input("enter a sentence:")
 wordList=sentence.split(" ")
 print("this sentence has",len(wordList),"words")
@@ -115,9 +107,26 @@ for ch in sentence:
 print("this sentence has:",digcnt,"digits",upcnt,"upper case letters",locnt,"lower case letters")
 
 
-# In[8]:
 
 
+#lab program 3(a)
+sentence=input("enter a sentence:")
+wordList=sentence.split(" ")
+print("this sentence has",len(wordList),"words")
+digcnt=upcnt=locnt=0
+for ch in sentence:
+    if '0'<=ch<='9':
+        digcnt+=1
+    elif 'A'<=ch<='Z':
+        upcnt+=1
+    elif 'a'<=ch<='z':
+        locnt+=1
+print("this sentence has:",digcnt,"digits",upcnt,"upper case letters",locnt,"lower case letters")
+
+
+
+
+#lab program 3(B)
 str1=input()
 str2=input()
 if len(str2)<len(str1):
@@ -137,7 +146,7 @@ print(matchcnt/long)
 
 # In[9]:
 
-
+#trying to use fstring feature
 var="fstring"
 print(f"this is a variable allocation using f string {var}")
 
@@ -296,13 +305,13 @@ new_list=[ ('hello',x) for x in list if x!='naveen']
 print(new_list)
 
 
-# In[ ]:
 
 
 
 
 
-# In[ ]:
+
+
 
 
 
